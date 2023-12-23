@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Diario</title>
+</head>
+<body>
+    <header>
+        <main id="main">
+            <form id="formulario2">
+            <h2 id="h2"> </h2> 
+            <p class="contraseña">Genera tu contraseña segura 🔐 </p> <br>
+            <p class="caracteres"> Selecciona un número de caracteres para tu contraseña: </p>
+            <input id="input" type="number" min="12" max="50"/>
+            <input id="btn" type="button" value="Generar contraseña"/>
+            </form>
+       </main>     
+            <div>
+                <p id="p">Contraseña Generada:</p>
+                <div id="password"></div>
+            </div>
+    </header>
+    <section>
+        <img id="randomimages" src="../assets/" alt="imagen">
+        <form id="formulario1">
+        <p>Tus enlaces de confianza 🔗 </p>
+        <input type="text" id="nombreEnlace" placeholder="Título">
+        <input type="text" id="url" placeholder="Enlace">
+        <button id="boton" onclick="agregarLink()">Añadir Link</button>
+        <div id="nombreEnlaceSpan"></div>
+        </form>
+        <ul id="listaLinks"></ul>
+    </section>   
+    <section id="Weather">
+        <div id="city"></div>
+        <div id="current-weather"></div>
+        <div id="temperature"> </div>
+        <div id="current-temperature"> </div>
+        <div id="degrees"> </div> <br> <br>
+        <div id="rain"></div>
+        <div id="humidity"></div>
+        <div id="wind"></div>
+        <div id="hours"></div>
+    </section>
+    <section id="clocksection">
+        <div id="clock"></div>
+        <p id="mensaje"></p>
+    </section>
+    </section>
+    <section id="dateSection">
+        <div id="date"></div>
+    </section>
+    <script src="../script.js/Images&links.js"></script>
+    <script src="../script.js/generator.js"></script>
+    <script src="../script.js/Weather.js"></script>
+    <script src="../script.js/Clock.js"></script>
+    <script src="../script.js/Date.js"></script>
+</body>
+</html>
